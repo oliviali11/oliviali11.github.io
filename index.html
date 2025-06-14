@@ -6,36 +6,32 @@
     <title>Olivia Li | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-    .typewriter {
-      overflow: hidden;
-      border-right: 2px solid orange;
-      white-space: nowrap;
-      animation: typing 3s steps(20), blink-caret 0.75s step-end infinite;
-      width: 0ch;
-      display: inline-block;
-      animation-fill-mode: forwards;
-    }
+      .typewriter {
+        overflow: hidden;
+        border-right: 0.15em solid orange;
+        white-space: nowrap;
+        margin: 0 auto;
+        animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+      }
 
-    @keyframes typing {
-      0% {
-        width: 0ch;
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
       }
-      50% {
-        width: 20ch;
-      }
-      100% {
-        width: 0ch;
-      }
-    }
 
-    @keyframes blink-caret {
-      from, to {
-        border-color: transparent;
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: orange;
+        }
       }
-      50% {
-        border-color: orange;
-      }
-    }
     </style>
   </head>
   <body class="min-h-screen text-gray-900">

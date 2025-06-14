@@ -50,47 +50,50 @@
         <div class="container mx-auto px-4">
           <h2 class="text-4xl font-bold text-green-700 underline text-center mb-10">Projects</h2>
           
-          <div class="grid md:grid-cols-2 gap-10">
+          <!-- 3-column grid on large screens -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
             <!-- Emotion Stream -->
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-transform hover:scale-[1.02]">
-              <img src="emotion_stream.png" alt="Emotion Stream" class="w-full h-64 object-cover">
-              <div class="p-6 text-green-800">
-                <h3 class="text-2xl font-semibold mb-2">Emotion Stream</h3>
-                <ul class="text-base list-disc list-inside space-y-1">
-                  <li>Built an accessible web application for caregivers to detect emotional stress in elderly patients using React + Flask and Hume AI</li>
-                  <li>Connected to MongoDB for storing patient info and sending real-time alerts to verified nurses</li>
+            <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
+              <img src="emotion_stream.png" alt="Emotion Stream" class="w-full h-40 object-cover">
+              <div class="p-4 text-green-800 text-sm">
+                <h3 class="text-xl font-semibold mb-1">Emotion Stream</h3>
+                <ul class="list-disc list-inside space-y-1">
+                  <li>Web app for detecting emotional stress in elderly patients using React + Flask and Hume AI.</li>
+                  <li>MongoDB for storing patient info and real-time nurse alerts.</li>
                 </ul>
-                <a href="https://github.com/oliviali11/EmotionStream" class="inline-block mt-4 text-green-600 hover:underline font-medium" target="_blank">View on GitHub →</a>
+                <a href="https://github.com/oliviali11/EmotionStream" class="inline-block mt-3 text-green-600 hover:underline font-medium text-sm" target="_blank">GitHub →</a>
               </div>
             </div>
       
             <!-- 5C Campus Link -->
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-transform hover:scale-[1.02]">
-              <img src="campus_link.png" alt="5C Campus Link" class="w-full h-64 object-cover">
-              <div class="p-6 text-green-800">
-                <h3 class="text-2xl font-semibold mb-2">5C Campus Link</h3>
-                <ul class="text-base list-disc list-inside space-y-1">
-                  <li>Developing a React Native app to coordinate rideshare among Claremont Colleges students</li>
-                  <li>Using Supabase backend for real-time queries and college email-based auth</li>
+            <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
+              <img src="campus_link.png" alt="5C Campus Link" class="w-full h-40 object-cover">
+              <div class="p-4 text-green-800 text-sm">
+                <h3 class="text-xl font-semibold mb-1">5C Campus Link</h3>
+                <ul class="list-disc list-inside space-y-1">
+                  <li>React Native app for Claremont student rideshare.</li>
+                  <li>Supabase backend and college email auth.</li>
                 </ul>
-                <a href="https://github.com/oliviali11/campusLink" class="inline-block mt-4 text-green-600 hover:underline font-medium" target="_blank">View on GitHub →</a>
+                <a href="https://github.com/oliviali11/campusLink" class="inline-block mt-3 text-green-600 hover:underline font-medium text-sm" target="_blank">GitHub →</a>
               </div>
             </div>
       
             <!-- Sports TLDR -->
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-transform hover:scale-[1.02]">
-              <img src="sports_tldr.png" alt="Sports TLDR" class="w-full h-64 object-cover">
-              <div class="p-6 text-green-800">
-                <h3 class="text-2xl font-semibold mb-2">Sports TLDR</h3>
-                <ul class="text-base list-disc list-inside space-y-1">
-                  <li>Built a full-stack app to summarize sports game videos using YouTube links</li>
-                  <li>Used React + Flask, with T5 model for highlight extraction</li>
+            <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
+              <img src="sports_tldr.png" alt="Sports TLDR" class="w-full h-40 object-cover">
+              <div class="p-4 text-green-800 text-sm">
+                <h3 class="text-xl font-semibold mb-1">Sports TLDR</h3>
+                <ul class="list-disc list-inside space-y-1">
+                  <li>Full-stack app to summarize sports videos from YouTube links.</li>
+                  <li>Built with React, Flask, and T5 NLP model.</li>
                 </ul>
-                <a href="https://github.com/oliviali11/sports_tldr" class="inline-block mt-4 text-green-600 hover:underline font-medium" target="_blank">View on GitHub →</a>
+                <a href="https://github.com/oliviali11/sports_tldr" class="inline-block mt-3 text-green-600 hover:underline font-medium text-sm" target="_blank">GitHub →</a>
               </div>
             </div>
+      
           </div>
         </div>
-      </section>      
+      </section>
   </body>
 </html>

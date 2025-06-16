@@ -33,64 +33,29 @@
           border-color: orange;
         }
       }
-
-      @keyframes slide-in {
-        from {
-          opacity: 0;
-          transform: translateX(100%);
-        }
-        to {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
-
-      .slide-in-photo {
-        animation: slide-in 3s ease-out forwards;
-        animation-delay: 0.3s; /* Small offset before image slides in */
-      }
     </style>
   </head>
   <body class="min-h-screen text-gray-900">
+  <!-- <body class="bg-gray-100 text-gray-900 flex items-center justify-center min-h-screen"> -->
     <div class="min-h-screen bg-gradient-to-br from-purple-100 via-violet-200 to-purple-300">
-      <div class="max-w-2xl mx-auto p-6 text-center">
+    <div class="max-w-2xl mx-auto p-6 text-center">
         <div class="flex items-center justify-center space-x-4">
-          <img
-            src="Olivia_Li.jpg"
-            alt="Olivia Li"
-            class="w-20 h-20 rounded-full border border-gray-300 shadow-sm slide-in-photo"
-          />
-          <div class="min-w-[14ch] overflow-hidden">
-            <h1 class="text-4xl md:text-6xl font-bold typewriter">
-              hello! i'm olivia
-            </h1>
-          </div>
+            <img src="Olivia_Li.jpg" alt="Olivia Li" class="w-20 h-20 rounded-full border border-gray-300 shadow-sm" />
+            <!-- <h1 class="text-4xl md:text-6xl font-bold typewriter">hello! i'm olivia</h1> -->
+            <div class="min-w-[14ch]"> <!-- Reserve space for 14 characters -->
+                <h1 class="text-4xl md:text-6xl font-bold typewriter">hello! i'm olivia</h1>
+              </div>
         </div>
-
-        <p class="mt-6 text-lg md:text-xl">
-          👩🏻‍💻 current <strong>CS+Math</strong> student at
-          <strong>Harvey Mudd College</strong><br />
-          💻 software developer intern @ <strong>Google YouTube</strong><br />
-          💡 <strong>deep learning + computer vision</strong> research @
-          <strong>Lab for CATS, HMC</strong><br />
-          🍵 love teaching math, crafts, food + matcha<br />
-          📩 contact me at
-          <a
-            href="mailto:olli@g.hmc.edu"
-            class="text-blue-600 hover:underline"
-            >olli@g.hmc.edu</a
-          >
-          or visit my
-          <a
-            href="https://www.linkedin.com/in/olivia-li-815267210/"
-            class="text-blue-600 hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
-            >linkedin</a
-          >
-        </p>
-      </div>
-      <section id="education" class="py-12">
+      <!-- <h1 class="text-4xl md:text-6xl font-bold typewriter">hello! i'm olivia</h1> -->
+      <p class="mt-6 text-lg md:text-xl">
+        👩🏻‍💻 current <strong>CS+Math</strong> student at <strong>Harvey Mudd College</strong><br />
+        💻 software developer intern @ <strong>Google YouTube</strong><br />
+        💡 <strong>deep learning + computer vision</strong> research @ <strong>Lab for CATS, HMC</strong><br />
+        🍵 love teaching math, crafts, food + matcha<br />
+        📩 contact me at <a href="mailto:olli@g.hmc.edu" class="text-blue-600 hover:underline">olli@g.hmc.edu</a> or visit my <a href="https://www.linkedin.com/in/olivia-li-815267210/" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">linkedin</a>
+      </p>
+    </div>
+    <section id="education" class="py-12">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-4xl font-bold text-gray-900 text-center mb-10">Education</h2>
             <p class="mt-6 text-lg md:text-xl">
@@ -174,11 +139,10 @@
         </div>
       </footer>
     </div>
-    <style>
-      html,
-      body {
-        height: 100%;
-      }
-    </style>
   </body>
+  <style>
+    html, body {
+      height: 100%;
+    }
+  </style>
 </html>

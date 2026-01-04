@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -219,6 +219,329 @@
         </div>
       </footer>
     </div>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+    </style>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olivia Li | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes typing {
+          from {
+            width: 0;
+          }
+          to {
+            width: 100%;
+          }
+        }
+      
+        @keyframes blink-caret {
+          from, to {
+            border-color: transparent;
+          }
+          50% {
+            border-color: orange;
+          }
+        }
+      
+        @keyframes slide-in {
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+        .typewriter {
+          overflow: hidden;
+          border-right: 0.15em solid orange;
+          white-space: nowrap;
+          margin: 0 auto;
+          padding-right: 0.5em;
+          animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+      
+        .slide-in-photo {
+          opacity: 0;
+          transform: translateX(100%);
+          animation: slide-in 2s ease-out forwards;
+          animation-delay: 0.1s;
+        }
+
+        .tab-button {
+          position: relative;
+          transition: all 0.3s ease;
+        }
+
+        .tab-button::after {
+          content: '';
+          position: absolute;
+          bottom: -2px;
+          left: 50%;
+          transform: translateX(-50%) scaleX(0);
+          width: 80%;
+          height: 3px;
+          background: linear-gradient(90deg, #c084fc, #a855f7);
+          border-radius: 2px;
+          transition: transform 0.3s ease;
+        }
+
+        .tab-button.active::after {
+          transform: translateX(-50%) scaleX(1);
+        }
+
+        .tab-button:hover {
+          transform: translateY(-2px);
+        }
+
+        html {
+          scroll-behavior: smooth;
+        }
+      </style>
+  </head>
+  <body class="min-h-screen text-gray-900">
+    <div class="min-h-screen bg-gradient-to-br from-purple-100 via-violet-200 to-purple-300">
+
+      <!-- About Section -->
+      <section id="about" class="pt-6">
+        <div class="max-w-4xl mx-auto p-6">
+          <!-- Navigation Tabs on Top Left -->
+          <nav class="flex space-x-1 mb-6">
+            <a href="#about" class="tab-button active px-4 py-2 rounded-full text-sm font-medium text-purple-700 hover:bg-white/50 transition-colors whitespace-nowrap">
+              about
+            </a>
+            <a href="#education" class="tab-button px-4 py-2 rounded-full text-sm font-medium text-gray-600 hover:bg-white/50 transition-colors whitespace-nowrap">
+              education
+            </a>
+            <a href="#experience" class="tab-button px-4 py-2 rounded-full text-sm font-medium text-gray-600 hover:bg-white/50 transition-colors whitespace-nowrap">
+              experience
+            </a>
+            <a href="#projects" class="tab-button px-4 py-2 rounded-full text-sm font-medium text-gray-600 hover:bg-white/50 transition-colors whitespace-nowrap">
+              projects
+            </a>
+          </nav>
+
+          <!-- Main Content -->
+          <div class="text-center">
+            <div class="flex items-center justify-center space-x-4">
+              <img
+                src="Olivia_Li.jpg"
+                alt="Olivia Li"
+                class="w-20 h-20 rounded-full border border-gray-300 shadow-sm slide-in-photo"
+              />
+              <div class="min-w-[14ch] overflow-hidden">
+                <h1 class="text-4xl md:text-6xl font-bold typewriter">
+                  hello! i'm olivia
+                </h1>
+              </div>
+            </div>
+
+            <p class="mt-6 text-lg md:text-xl">
+              👩🏻‍💻 current <strong>CS+Math</strong> student at
+              <strong>Harvey Mudd College</strong><br />
+              💻 software developer intern @ <strong>Google YouTube</strong><br />
+              💡 <strong>deep learning + computer vision</strong> research @
+              <strong>Lab for CATS, HMC</strong><br />
+              🍵 love teaching math, crafts, food + matcha<br />
+              📩 contact me at
+              <a
+                href="mailto:olli@g.hmc.edu"
+                class="text-blue-600 hover:underline"
+                >olli@g.hmc.edu</a
+              >
+              or visit my
+              <a
+                href="https://www.linkedin.com/in/olivia-li-815267210/"
+                class="text-blue-600 hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                >linkedin</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="py-12">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-4xl font-bold text-gray-900 text-center mb-10">Education</h2>
+          <p class="mt-6 text-lg md:text-xl">
+            <strong>junior at Harvey Mudd College</strong> majoring in <strong>CS+Math</strong>, RIF Scholar, GPA <strong>4.0/4.0</strong><br />
+            <strong>coursework:</strong> data structures + program development, algorithms, computer systems,<br />
+            computer networks, computer vision, math methods in data science<br />
+            <strong>involvements:</strong> Rewriting the Code, HMC-SWE, Pomona-AI, Lab for CATS,<br />
+            campus tour guide, residential affairs liaison, discrete math grader, algorithms grutor
+          </p>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="py-12">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-4xl font-bold text-gray-900 text-center mb-10">Experience</h2>
+          <p class="mt-6 text-lg md:text-xl">
+            software developer intern @ <strong>Google YouTube</strong>, summer 2025<br />
+            software engineer intern @ <strong>AIxDo.co</strong>, summer 2024<br />
+            deep learning and computer vision researcher @ <strong>Lab for CATS</strong>, may 2024 - present<br />
+            p-stonks machine learning project lead @ <strong>Pomona-AI</strong>, sept 2023 - dec 2023<br />
+            SWE-HMC mentorship coordinator @ <strong>Harvey Mudd College</strong>, apr 2024 - present<br />
+            junior counselor @ <strong>Ross Mathematics Program</strong>, jun 2021 - july 2022
+          </p>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="py-12">
+        <div class="container mx-auto px-4">
+          <h2 class="text-4xl font-bold text-gray-900 text-center mb-10">Projects</h2>
+            
+            <!-- 3-column grid on large screens -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+              <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
+                <img src="lfcats.png" alt="Lab for CATS" class="w-full h-40 object-cover">
+                <div class="p-4 text-sm">
+                  <h3 class="text-xl font-semibold mb-1">Spatial Vision Research</h3>
+                  <ul class="list-disc list-inside space-y-1">
+                    <li>Benchmarking SOTA depth processing models for spatial and temporal consistency.</li>
+                    <li>Creating custom monocular + binocular dataset to test in controlled conditions.</li>
+                  </ul>
+                  <a href="https://scair25.s3.us-west-2.amazonaws.com/abstract_Rode.pdf" class="inline-block mt-3 text-green-600 hover:underline font-medium text-sm" target="_blank">Accepted Abstract →</a>
+                </div>
+              </div>
+              
+              <!-- Emotion Stream -->
+              <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
+                <img src="emotion_stream.png" alt="Emotion Stream" class="w-full h-40 object-cover">
+                <div class="p-4 text-sm">
+                  <h3 class="text-xl font-semibold mb-1">Emotion Stream</h3>
+                  <ul class="list-disc list-inside space-y-1">
+                    <li>Web app for detecting emotional stress in elderly patients using React + Flask and Hume AI.</li>
+                    <li>MongoDB for storing patient info and real-time nurse alerts.</li>
+                  </ul>
+                  <a href="https://github.com/oliviali11/EmotionStream" class="inline-block mt-3 text-green-600 hover:underline font-medium text-sm" target="_blank">GitHub →</a>
+                </div>
+              </div>
+        
+              <!-- 5C Campus Link -->
+              <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
+                <img src="campus_link.png" alt="5C Campus Link" class="w-full h-40 object-cover">
+                <div class="p-4 text-sm">
+                  <h3 class="text-xl font-semibold mb-1">5C Campus Link</h3>
+                  <ul class="list-disc list-inside space-y-1">
+                    <li>React Native app for Claremont student rideshare.</li>
+                    <li>Supabase and Python backend and college email auth.</li>
+                  </ul>
+                  <a href="https://github.com/oliviali11/campusLink" class="inline-block mt-3 text-green-600 hover:underline font-medium text-sm" target="_blank">GitHub →</a>
+                </div>
+              </div>
+        
+              <!-- Sports TLDR -->
+              <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
+                <img src="sports_tldr.png" alt="Sports TLDR" class="w-full h-40 object-cover">
+                <div class="p-4 text-sm">
+                  <h3 class="text-xl font-semibold mb-1">Sports TLDR</h3>
+                  <ul class="list-disc list-inside space-y-1">
+                    <li>Full-stack app to summarize sports videos from YouTube links.</li>
+                    <li>Built with React, Flask, and T5 NLP model.</li>
+                  </ul>
+                  <a href="https://github.com/oliviali11/sports_tldr" class="inline-block mt-3 text-green-600 hover:underline font-medium text-sm" target="_blank">GitHub →</a>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
+                <img src="dora.png" alt="dora" class="w-full h-40 object-cover">
+                <div class="p-4 text-sm">
+                  <h3 class="text-xl font-semibold mb-1">dora - discovery optimized research assistant</h3>
+                  <ul class="list-disc list-inside space-y-1">
+                    <li>Vector embedding and RAG based app for evaluating research papers</li>
+                    <li>Built with FastAPI, React, Gemini.</li>
+                  </ul>
+                  <a href="https://github.com/oliviali11/dora" class="inline-block mt-3 text-green-600 hover:underline font-medium text-sm" target="_blank">GitHub →</a>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
+                <img src="bailando.png" alt="bailando" class="w-full h-40 object-cover">
+                <div class="p-4 text-sm">
+                  <h3 class="text-xl font-semibold mb-1">bailando</h3>
+                  <ul class="list-disc list-inside space-y-1">
+                    <li>Generative AI for music to dance generation and visualization</li>
+                    <li>Leveraged EDGE model, FastAPI, Python</li>
+                  </ul>
+                  <a href="https://github.com/oliviali11/bailando" class="inline-block mt-3 text-green-600 hover:underline font-medium text-sm" target="_blank">GitHub →</a>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
+                <img src="cv.png" alt="cv" class="w-full h-40 object-cover">
+                <div class="p-4 text-sm">
+                  <h3 class="text-xl font-semibold mb-1">CV Model Architecture vs. Adversarial Attack analysis</h3>
+                  <ul class="list-disc list-inside space-y-1">
+                    <li>Benchmarking analysis on performance of CNN, ViT, and hybrid models on ImageNet</li>
+                    <li>Generated plots for model robustness against perturbed inputs</li>
+                  </ul>
+                  <a href="https://github.com/oliviali11/cv_project" class="inline-block mt-3 text-green-600 hover:underline font-medium text-sm" target="_blank">GitHub →</a>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        </section>
+
+      <footer class="mt-20 text-gray-800 py-6">
+        <div class="max-w-4xl mx-auto px-4 text-center space-y-2">
+          <p class="text-lg font-semibold">Let's connect 🌟</p>
+          <div class="flex justify-center space-x-6 text-purple-700 text-sm">
+            <a href="mailto:olli@g.hmc.edu" class="text-blue-600 hover:underline">📩 olli@g.hmc.edu</a>
+            <a href="https://www.linkedin.com/in/olivia-li-815267210/" target="_blank" class="text-blue-600 hover:underline">💼 LinkedIn</a>
+            <a href="https://github.com/oliviali11" target="_blank" class="text-blue-600 hover:underline">🐙 GitHub</a>
+          </div>
+          <p class="text-xs text-gray-500 mt-2">© 2026 Olivia Li</p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Update active tab based on scroll position
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.tab-button');
+
+      function updateActiveTab() {
+        let current = '';
+        
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (pageYOffset >= sectionTop - 100) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active', 'text-purple-700');
+          link.classList.add('text-gray-600');
+          if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active', 'text-purple-700');
+            link.classList.remove('text-gray-600');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateActiveTab);
+      window.addEventListener('load', updateActiveTab);
+    </script>
+
     <style>
       html,
       body {

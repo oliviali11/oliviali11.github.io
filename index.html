@@ -60,7 +60,7 @@
           transform: translateX(-50%) scaleX(0);
           width: 80%;
           height: 3px;
-          background: linear-gradient(90deg, #c084fc, #a855f7);
+          background: linear-gradient(90deg, #6b21a8, #581c87);
           border-radius: 2px;
           transition: transform 0.3s ease;
         }
@@ -83,18 +83,18 @@
 
       <!-- About Section -->
       <section id="about" class="pt-6">
-        <!-- Navigation Tabs at Exact Top Left -->
-        <nav class="flex space-x-1 px-6 py-4">
-          <a href="#about" class="tab-button active px-4 py-2 rounded-full text-sm font-medium text-purple-700 hover:bg-white/50 transition-colors whitespace-nowrap">
+        <!-- Navigation Tabs at Exact Top Left - Sticky -->
+        <nav class="sticky top-0 z-50 bg-gradient-to-r from-purple-100/95 to-transparent backdrop-blur-sm flex space-x-1 px-6 py-4">
+          <a href="#about" class="tab-button active px-4 py-2 rounded-full text-sm font-medium text-purple-900 hover:bg-white/50 transition-colors whitespace-nowrap">
             about
           </a>
-          <a href="#education" class="tab-button px-4 py-2 rounded-full text-sm font-medium text-gray-600 hover:bg-white/50 transition-colors whitespace-nowrap">
+          <a href="#education" class="tab-button px-4 py-2 rounded-full text-sm font-medium text-purple-800 hover:bg-white/50 transition-colors whitespace-nowrap">
             education
           </a>
-          <a href="#experience" class="tab-button px-4 py-2 rounded-full text-sm font-medium text-gray-600 hover:bg-white/50 transition-colors whitespace-nowrap">
+          <a href="#experience" class="tab-button px-4 py-2 rounded-full text-sm font-medium text-purple-800 hover:bg-white/50 transition-colors whitespace-nowrap">
             experience
           </a>
-          <a href="#projects" class="tab-button px-4 py-2 rounded-full text-sm font-medium text-gray-600 hover:bg-white/50 transition-colors whitespace-nowrap">
+          <a href="#projects" class="tab-button px-4 py-2 rounded-full text-sm font-medium text-purple-800 hover:bg-white/50 transition-colors whitespace-nowrap">
             projects
           </a>
         </nav>
@@ -299,11 +299,11 @@
         });
 
         navLinks.forEach(link => {
-          link.classList.remove('active', 'text-purple-700');
-          link.classList.add('text-gray-600');
+          link.classList.remove('active', 'text-purple-900');
+          link.classList.add('text-purple-800');
           if (link.getAttribute('href') === '#' + current) {
-            link.classList.add('active', 'text-purple-700');
-            link.classList.remove('text-gray-600');
+            link.classList.add('active', 'text-purple-900');
+            link.classList.remove('text-purple-800');
           }
         });
       }
